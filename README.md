@@ -17,14 +17,14 @@ Features
 - Staff command dashboard with global broadcast
 
 
-Tech Stack
-Layer                  Technology
+Tech Stack:
+Layer          &        Technology
 ------------------------------------------------
-Frontend                Flutter
-AI              Gemini AI (Google AI Studio)
-Database              Firebase Firestore
-Auth               Firebase Authentication
-Pathfinding          BFS Algorithm
+Frontend       -         Flutter;
+AI             - Gemini AI (Google AI Studio);
+Database       -       Firebase Firestore;
+Auth           -    Firebase Authentication;
+Pathfinding    -      BFS Algorithm;
 
 Architecture
 Guest App  ──→  Firebase Firestore  ──→  Command Dashboard
@@ -32,12 +32,12 @@ Guest App  ──→  Firebase Firestore  ──→  Command Dashboard
 Gemini AI Triage  ──────────────────────────→ Alert Queue
 
 Project Status
-✅ Guest SOS App — complete
-✅ Command Dashboard — complete
-✅ Gemini AI Triage — complete
-🔄 Floor Plan with BFS routing — in progress
-🔄 Multi-floor support — in progress
-🔄 Hotel admin panel — planned
+✅ Guest SOS App — complete;
+✅ Command Dashboard — complete;
+✅ Gemini AI Triage — complete;
+🔄 Floor Plan with BFS routing — in progress;
+🔄 Multi-floor support — in progress;
+🔄 Hotel admin panel — planned;
 
 Built By
 Deep Kamble
