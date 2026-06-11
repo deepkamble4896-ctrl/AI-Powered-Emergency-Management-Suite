@@ -1,21 +1,43 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://ai.google.dev/static/site-assets/images/share-ais-513315318.png" />
-</div>
+AI-Powered Emergency Management Suite
 
-# Run and deploy your AI Studio app
+Real-time emergency response system for large-scale hospitality environments. Built for the Google AI Solution Challenge 2026.
 
-This contains everything you need to run your app locally.
+Problem Statement
+Large hotels manage thousands of guests across multiple floors with no real-time communication layer during emergencies. Existing systems rely on radio calls, manual headcounts, and static evacuation maps — creating dangerous delays when seconds matter.
 
-View your app in AI Studio: https://ai.studio/apps/859cb695-e14b-47bf-aa6f-6221894b62d4
+Solution
+A dual-interface mobile system that connects guests directly to security command in real time, powered by Gemini AI and Firebase infrastructure.
 
-## Run Locally
+Features
 
-**Prerequisites:**  [Android Studio](https://developer.android.com/studio)
+- Interactive floor plan with BFS evacuation pathfinding
+- Press-and-hold SOS with GPS dispatch to command
+- Gemini AI threat triage from natural language reports
+- Real-time safety feed across all active incidents
+- Staff command dashboard with global broadcast
 
 
-1. Open Android Studio
-2. Select **Open** and choose the directory containing this project
-3. Allow Android Studio to fix any incompatibilities as it imports the project.
-4. Create a file named `.env` in the project directory and set `GEMINI_API_KEY` in that file to your Gemini API key (see `.env.example` for an example)
-5. Remove this line from the app's `build.gradle.kts` file: `signingConfig = signingConfigs.getByName("debugConfig")`
-6. Run the app on an emulator or physical device
+Tech Stack
+Layer                  Technology
+------------------------------------------------
+Frontend                Flutter
+AI              Gemini AI (Google AI Studio)
+Database              Firebase Firestore
+Auth               Firebase Authentication
+Pathfinding          BFS Algorithm
+
+Architecture
+Guest App  ──→  Firebase Firestore  ──→  Command Dashboard
+     ↓                                        ↑
+Gemini AI Triage  ──────────────────────────→ Alert Queue
+
+Project Status
+✅ Guest SOS App — complete
+✅ Command Dashboard — complete
+✅ Gemini AI Triage — complete
+🔄 Floor Plan with BFS routing — in progress
+🔄 Multi-floor support — in progress
+🔄 Hotel admin panel — planned
+
+Built By
+Deep Kamble
