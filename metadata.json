@@ -1,0 +1,6 @@
+{
+  "name": "Code Forge",
+  "description": "An emergency hospitality safety suite for Taj Mahal Hotel.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
